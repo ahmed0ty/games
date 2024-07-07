@@ -1,0 +1,151 @@
+body
+{
+
+    background-color: #272b30;
+    background-image: url("../images/wraper.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+     background-position: top; 
+    
+     
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    transition: color 0.3s ease !important; 
+}
+.navbar-brand
+{
+    cursor: text;
+    font-family: "Comfortaa", sans-serif ;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #09c !important;
+}
+.navbar
+{
+    background-color:#3a497b !important ;
+    width:1100px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important;
+  
+}
+.logo
+{
+    width: 50px !important;
+}
+.nav-item a
+{
+    font-size: 12px !important;
+    font-family: "Comfortaa", sans-serif ;
+    
+}
+.desc
+{
+    color: #787a7d !important;
+    height: 50px; 
+    overflow: hidden;
+}
+.free
+{
+    background-color:#3a497b !important ;
+    font-size: 13px;
+    font-weight: bold;
+}
+.gameitem
+{
+    height: 335px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.card-footer p
+{
+    background-color: #363739;
+    border-radius: 10px;
+    padding-block: 2px;
+    padding-inline: 4px;
+    font-size: 11px;
+    font-weight: bold;
+} 
+.gameitem img {
+    filter: grayscale(40%);
+    transition: filter 0.5s ease;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px ;
+}
+
+.col-md-3:hover .gameitem img {
+    filter: grayscale(0%);
+}
+.col-md-3:hover .gameitem .free {
+    background-color: #0d6efd !important;
+    transition: all 0.5s;
+}
+
+.col-md-3 {
+    filter: grayscale(40%);
+    transition: all 0.5s ease;
+}
+
+.col-md-3:hover {
+    filter: grayscale(0%);
+    transform: scale(1.07777);
+    transition: all 0.5s ease; 
+}
+span
+{
+    background-color: #0dcaf0;
+    color: #000202;
+    border-radius: 10px;
+    font-size: 12px;
+}
+.spinner {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db; 
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(39, 43, 48, 0.7);
+    display: none; 
+}
+i
+{
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 8px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #23282d;
+    border-radius: 4px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+::-webkit-scrollbar-track {
+    background: #32353a;
+    border-radius: 8px;
+}
