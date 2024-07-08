@@ -35,7 +35,7 @@ export class GameDisplay {
 
         document.querySelectorAll('.gameitem').forEach((item) => {
             item.addEventListener('click', function () {
-                console.log(item.getAttribute('id'));
+                // console.log(item.getAttribute('id'));
 
                 const gameId = item.getAttribute('id');
                 getdetails(gameId); 
@@ -65,7 +65,10 @@ export class detailsDisplay {
         for (var i = 0; i < this.alldetailes.length; i++) {
 
             box += `
+            <div class="d-flex justify-content-between align-items-center">
             <h1 class="text-white p-5">Details Game</h1>
+             <i class="fa-solid fa-xmark text-white fs-5"></i>
+            </div>
              <div class="col-md-4">
 
                     <img src="${this.alldetailes[i].thumbnail}" alt="" class="w-100">
@@ -79,11 +82,7 @@ export class detailsDisplay {
                     <button type="button" class="btn btn-outline-warning text-white fw-semibold my-5">Show Game</button>
 
                 </div>
-                   <div class="col-md-1">
-
-                    <i class="fa-solid fa-xmark text-white fs-5"></i>
-
-                </div>
+                   
 
             `;
         }

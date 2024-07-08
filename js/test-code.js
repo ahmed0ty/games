@@ -24,7 +24,7 @@ const spinner = document.querySelector('.spinner');
     try {
         const api = await fetch(`https://free-to-play-games-database.p.rapidapi.com/api/games?category=${game}`, options);
         const response = await api.json();
-        console.log(response);
+        // console.log(response);
 
         
         const gameDisplay = new GameDisplay(response, rowElement);
@@ -78,7 +78,7 @@ export async function getdetails(gameId) {
         const apidetail = await fetch(`https://free-to-play-games-database.p.rapidapi.com/api/game?id=${gameId}`, options);
         const responsedetail = await apidetail.json();
         
-        console.log(responsedetail);
+        // console.log(responsedetail);
 
         
         const detailsDisplayInstance = new detailsDisplay([responsedetail], rowElement2);
